@@ -93,18 +93,4 @@ pipeline {
 
   }
 	
-	stage('Remove dangling docker images') {
-
-      steps{
-
-        script {
-
-		        sh "docker system prune --force --all"
-        }
-
-      }
-
-	}
-
-  }
 }
